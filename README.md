@@ -27,8 +27,13 @@ AIエンジニアリング実践講座（AIE2026）の演習と宿題で使う�
 
 ```bash
 uv run pytest -q
-uv run python -m app.ask "LoRAとは何ですか？"
+uv run python -m app.ask
+uv run python -m app.ask --model gemini-3.5-flash
 ```
+
+質問を入力すると会話履歴を使って続けて質問できます。最初の質問はコマンド引数、初期モデルは `--model` で指定できます。会話中は `/model MODEL_ID` でモデルを切り替えられます。`exit` または `quit` で終了します。
+
+既定でリクエスト間に4秒の間隔を置き、429や一時的なサーバーエラーは最大5回、指数バックオフで再試行します。会話履歴は直近10ターンに制限されます。`--request-interval`、`--max-retries`、`--max-history-turns` で調整できます。各回答には応答時間と入出力トークン数が表示されます。
 
 詳しい手順は [lectures/01/problem.md](lectures/01/problem.md) を見てください。
 
