@@ -13,7 +13,10 @@
 
 ## 宿題
 
-- 取り組んだレベル：基礎 / 実装 / 発展
-- 変えた設定やデータ：
-- 結果（比較表や数字）：
-- ファインチューニングが向く場面・向かない場面についての考察：
+- 取り組んだレベル：基礎 / 実装 / 発展 The level you worked on basics / implementation / advanced
+- basics
+- 変えた設定やデータ： dafsdf dsf
+- 結果（比較表や数字）： daf sdfsdaf
+- ファインチューニングが向く場面・向かない場面についての考察： adfsd fsda fsdfafsdafsdaf
+
+fadfdasfsa
